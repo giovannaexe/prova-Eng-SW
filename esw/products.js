@@ -29,3 +29,21 @@ function listar() {
         console.log(p)
     })
 }
+
+function produto_Escolar (value){
+    if (value.categoria == "Escolar")
+    return value;
+}
+var produtosEscolar = produtos.filter(produto_Escolar);
+produtosEscolar.forEach(produtoEscolar => { 
+    console.log(produtoEscolar);
+})
+
+function produto_Eletronico (value){
+    if (value.categoria == "Eletrônico")
+    return value;
+}
+var produtosEletronico = produtos.filter(produto_Eletronico);
+produtosEletronico.forEach(produtoEletro => { 
+    console.log(produtoEletro);
+})
